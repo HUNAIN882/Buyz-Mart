@@ -187,6 +187,75 @@ nav .nav-right button:hover {
     nav .logo { font-size: 24px; }
 }
 
+.footer {
+    background: #1e1e2f;
+    color: #fff;
+    margin-top: 60px;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+    color: #8f94fb;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.footer-col a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col a:hover {
+        transform: none;
+    }
+}
+
+
 </style>
 </head>
 <body>
@@ -246,6 +315,43 @@ nav .nav-right button:hover {
             <button id="submit-login">Login</button>
         </div>
     </div>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Buyz Mart</h3>
+            <p>Your trusted international shopping platform for quality products.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Hoodies</a>
+            <a href="#">Watches</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Support</h4>
+            <p>Email: support@buyzmart.com</p>
+            <p>Available 24/7</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Buyz Mart. All Rights Reserved.
+    </div>
+</footer>
+
 
     <script src="script.js"></script>
 </body>
