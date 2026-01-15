@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Continue to Chat</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 350px;
+      width: 90%;
+    }
+
+    .chat-button {
+      padding: 14px 28px;
+      background-color: #25D366;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    .chat-button:hover {
+      background-color: #1ebe5d;
+      transform: translateY(-2px);
+    }
+
+    .whatsapp-image {
+      width: 120px;
+      max-width: 50%;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .chat-button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      .whatsapp-image {
+        width: 100px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .chat-button {
+        font-size: 14px;
+        padding: 10px 18px;
+      }
+      .whatsapp-image {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a 
+      class="chat-button" 
+      href="https://api.whatsapp.com/send/?phone=923222127847&text=Hi%2C+I+want+to+place+an+order.&type=phone_number&app_absent=0" 
+      target="_blank"
+    >
+      Continue to Chat
+    </a>
+
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+      alt="WhatsApp Logo" 
+      class="whatsapp-image"
+    />
+  </div>
+
+</body>
+</html>
